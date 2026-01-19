@@ -1,0 +1,462 @@
+/*------------------------------------------------------------
+  Global
+------------------------------------------------------------*/
+
+:root {
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --green: #fff;
+  --light-green: #97fab8;
+  --bright-green: #50ff8a;
+  --dark-green: #002420;
+  --dark: #000d0b;
+
+  /* Positive Units */
+  --10px: 0.625rem;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --24px: 1.5rem;
+  --28px: 1.75rem;
+  --30px: 1.875rem;
+  --36px: 2.25rem;
+  --40px: 2.5rem;
+  --48px: 3rem;
+  --50px: 3.125rem;
+  --60px: 3.75rem;
+  --70px: 4.375rem;
+  --80px: 5rem;
+  --100px: 6.25rem;
+  --120px: 7.5rem;
+  --140px: 8.75rem;
+  --160px: 10rem;
+  --200px: 12.5rem;
+
+  /* Negative Units */
+  ---10px: -0.625rem;
+  ---12px: -0.75rem;
+  ---14px: -0.875rem;
+  ---16px: -1rem;
+  ---18px: -1.125rem;
+  ---20px: -1.25rem;
+  ---28px: -1.75rem;
+  ---30px: -1.875rem;
+  ---40px: -2.5rem;
+  ---60px: -3.75rem;
+  ---80px: -5rem;
+  ---100px: -6.25rem;
+  ---120px: -7.5rem;
+  ---140px: -8.75rem;
+  ---160px: -10rem;
+  ---200px: -12.5rem;
+
+  /* Container */
+  --1700px: 106.25rem;
+}
+
+/*------------------------------------------------------------
+  Fonts
+------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/*------------------------------------------------------------
+  Global
+------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+h1,
+.h1 {
+  font-size: var(--60px);
+}
+h2,
+.h2 {
+  font-size: var(--40px);
+}
+h3,
+.h3 {
+  font-size: var(--30px);
+}
+h4,
+.h4 {
+  font-size: var(--24px);
+}
+h5,
+.h5 {
+  font-size: var(--20px);
+}
+h6,
+.h6 {
+  font-size: 18px;
+}
+
+p,
+li {
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+header {
+  border-bottom: 2px solid var(--light-green);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------
+  Color
+------------------------------------------------------------*/
+
+.accent-1 {
+  color: var(--light-green);
+}
+
+.line {
+  background-color: var(--light-green);
+  border: none;
+  border-radius: 5px;
+  height: 2px;
+}
+
+/*------------------------------------------------------------
+  Typography
+------------------------------------------------------------*/
+
+.head-contr {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sub-head {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-size: var(--14px);
+  letter-spacing: 0.7rem;
+  color: var(--light-green);
+  margin-bottom: 5px;
+}
+
+.main-head {
+  font-size: 60px;
+  font-weight: 300;
+  padding: 0 40px;
+}
+
+.content p {
+  margin-bottom: var(--20px);
+}
+
+/*------------------------------------------------------------
+  Layout
+------------------------------------------------------------*/
+
+.section {
+  padding: var(--80px) var(--40px);
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-contr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid var(--bright-green);
+}
+
+/*------------------------------------------------------------
+  Buttons
+------------------------------------------------------------*/
+
+.btn-primary {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  background: var(--light-green);
+  border: 2px solid var(--light-green);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-radius: 3px;
+  transition: background 0.25s ease-in-out;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  border: 2px solid var(--bright-green);
+  background: var(--bright-green);
+}
+.btn-secondary {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  padding: 10px 30px;
+  color: var(--light-green);
+  border: 2px solid var(--light-green);
+
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-radius: 3px;
+  transition: background 0.25s ease-in-out;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background: var(--bright-green);
+  border: 2px solid var(--bright-green);
+  color: #000;
+}
+
+/*------------------------------------------------------------
+  Header
+------------------------------------------------------------*/
+
+#header {
+  padding: 20px 40px;
+  max-width: 100%;
+}
+
+.text-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  transition: text-shadow 0.2s ease-in-out;
+  text-shadow: 0px 1px 5px var(--bright-green);
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-right: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+  transition: border 0.25s ease-in-out;
+}
+
+.navbar ul li a {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--light-green);
+}
+
+.navbar ul li:hover {
+  border-bottom: 1px solid var(--light-green);
+}
+
+/*------------------------------------------------------------
+  Hero
+------------------------------------------------------------*/
+
+#hero {
+  padding: var(--160px) var(--40px);
+  height: auto;
+}
+
+#hero .sub-head {
+  font-size: var(--20px);
+}
+
+#hero h1 {
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#hero hr {
+  width: 90%;
+}
+
+#hero p {
+  margin: 25px 0;
+}
+
+#hero .content {
+  padding-right: 60px;
+}
+
+#hero .profile {
+}
+
+#hero .profile img {
+}
+
+#hero .btn-secondary {
+  margin-right: var(--20px);
+}
+
+/*------------------------------------------------------------
+  Experience
+------------------------------------------------------------*/
+
+#experience {
+  padding-bottom: 60px;
+}
+
+hr {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--light-green);
+  border: none;
+  height: 2px;
+}
+
+.box {
+  border: 2px solid var(--light-green);
+  border-radius: 5px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.job-list {
+  padding: 40px 0;
+}
+
+.job-list hr {
+  width: 5%;
+  margin: 15px 0;
+}
+
+.job-list ul li {
+  line-height: 2.5rem;
+  margin-left: 15px;
+}
+
+.job-list {
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border: 2px solid var(--light-green);
+  border-radius: 5px;
+  padding: var(--20px);
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--20px);
+}
+
+.icon-group img {
+  height: 60px;
+  padding-bottom: 5px;
+}
+
+#experience .icon-group .icon-name {
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+/*------------------------------------------------------------
+  Portfolio
+------------------------------------------------------------*/
+
+.portfolio {
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects .project-item {
+  position: relative;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 100%;
+  filter: saturate(0);
+}
+
+
+  .project-overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
