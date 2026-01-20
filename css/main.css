@@ -65,6 +65,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -76,7 +79,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #fff;
+  font-size: 1rem;
 }
+
+/*------------------------------------------------------------
+  Typography
+------------------------------------------------------------*/
 
 h1,
 .h1,
@@ -121,17 +129,59 @@ h6,
 
 p,
 li {
+  font-size: var(--18px);
   letter-spacing: 0.05rem;
   font-weight: 300;
   line-height: 1.75rem;
 }
 
-header {
-  border-bottom: 2px solid var(--light-green);
-}
-
 a {
   text-decoration: none;
+}
+
+.head-contr {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sub-head,
+.sub-head-lg {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  color: var(--light-green);
+}
+
+.sub-head {
+  font-size: var(--16px);
+  margin-bottom: 5px;
+}
+
+.sub-head-lg {
+  font-size: var(--20px);
+  margin-bottom: 20px;
+}
+
+.main-head {
+  font-size: 60px;
+  font-weight: 300;
+  padding: 0 40px;
+}
+
+.content p {
+  margin-bottom: var(--20px);
+}
+
+.decor-text {
+  display: inline-block;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--dark);
+  background-color: var(--light-green);
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
 }
 
 /*------------------------------------------------------------
@@ -150,34 +200,6 @@ a {
 }
 
 /*------------------------------------------------------------
-  Typography
-------------------------------------------------------------*/
-
-.head-contr {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.sub-head {
-  font-family: "Orbitron", sans-serif;
-  text-transform: uppercase;
-  font-size: var(--14px);
-  letter-spacing: 0.7rem;
-  color: var(--light-green);
-  margin-bottom: 5px;
-}
-
-.main-head {
-  font-size: 60px;
-  font-weight: 300;
-  padding: 0 40px;
-}
-
-.content p {
-  margin-bottom: var(--20px);
-}
-
-/*------------------------------------------------------------
   Layout
 ------------------------------------------------------------*/
 
@@ -187,16 +209,21 @@ a {
 
 .container {
   max-width: 1280px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.container-lg {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .center {
   text-align: center;
 }
 
-.flex-contr {
+.flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -210,13 +237,14 @@ a {
 ------------------------------------------------------------*/
 
 .btn-primary {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-weight: 500;
+  letter-spacing: 0.2rem;
+
   background: var(--light-green);
   border: 2px solid var(--light-green);
   padding: 10px 30px;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
   border-radius: 3px;
   transition: background 0.25s ease-in-out;
 }
@@ -227,7 +255,7 @@ a {
   background: var(--bright-green);
 }
 .btn-secondary {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-weight: 500;
   background: transparent;
   padding: 10px 30px;
@@ -252,12 +280,20 @@ a {
 ------------------------------------------------------------*/
 
 #header {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 40px;
   max-width: 100%;
+  border-bottom: 2px solid var(--light-green);
+}
+
+#header .container-lg {
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-logo {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 400;
   font-style: normal;
@@ -268,14 +304,13 @@ a {
 
 .logo {
   width: 100%;
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 120px;
+  min-width: 120px;
 }
 
 .navbar {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar ul li {
@@ -286,16 +321,20 @@ a {
   transition: border 0.25s ease-in-out;
 }
 
+.navbar ul li:hover {
+  border-bottom: 1px solid var(--bright-green);
+}
+
 .navbar ul li a {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
   text-decoration: none;
   display: inline-block;
   color: var(--light-green);
 }
 
-.navbar ul li:hover {
-  border-bottom: 1px solid var(--light-green);
+.navbar ul li a:hover {
+  color: var(--bright-green);
 }
 
 /*------------------------------------------------------------
@@ -304,7 +343,9 @@ a {
 
 #hero {
   padding: var(--160px) var(--40px);
-  height: auto;
+  height: 100vh;
+  max-height: 1080px;
+  min-height: 768px;
 }
 
 #hero .sub-head {
@@ -312,7 +353,7 @@ a {
 }
 
 #hero h1 {
-  font-size: 80px;
+  font-size: var(--80px);
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -325,8 +366,12 @@ a {
   margin: 25px 0;
 }
 
-#hero .content {
-  padding-right: 60px;
+#hero .profile {
+  padding-left: 100px;
+}
+
+#hero .profile img {
+  width: 420px;
 }
 
 #hero .btn-secondary {
@@ -334,7 +379,7 @@ a {
 }
 
 /*------------------------------------------------------------
-  Experience
+  Work Experience
 ------------------------------------------------------------*/
 
 #experience {
@@ -349,25 +394,45 @@ hr {
   height: 2px;
 }
 
-.box {
+.role {
   border: 2px solid var(--light-green);
   border-radius: 5px;
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 60px 40px;
+  text-align: center;
 }
 
-.job-list {
+.role-list {
   padding: 40px 0;
 }
 
-.job-list hr {
+.role-list hr {
   width: 5%;
   margin: 15px 0;
 }
 
-.job-list ul li {
+.role-list ul li {
   line-height: 2.5rem;
   margin-left: 15px;
+}
+
+.v-line {
+  position: relative;
+  width: 2px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: var(--light-green);
+}
+
+.v-line::before {
+  content: "";
+  background-color: var(--light-green);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icons {
@@ -404,7 +469,8 @@ hr {
   Portfolio
 ------------------------------------------------------------*/
 
-.portfolio {
+#portfolio .content {
+  text-align: center;
 }
 
 .projects {
@@ -441,4 +507,96 @@ hr {
   padding: 10px 10px;
   border-radius: 5px;
   font-weight: 500;
+}
+
+/*------------------------------------------------------------ 
+  max-width: 1280px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 80em) {
+  .logo {
+    width: 100%;
+    max-width: 100px;
+    min-width: 100px;
+  }
+
+  .navbar ul li a {
+    font-size: var(--14px);
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+  }
+
+  #hero .profile {
+    padding-left: 80px;
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 992px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 62em) {
+  #header {
+    padding: 10px 20px;
+  }
+
+  .navbar ul li {
+    margin-right: var(--14px);
+  }
+
+  #hero {
+    height: auto;
+    max-height: 100%;
+    padding: var(--80px) var(--20px);
+  }
+
+  #hero h1 {
+    font-size: var(--60px);
+  }
+
+  #hero .flex {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  #hero .profile {
+    padding: 0;
+  }
+
+  #hero .profile img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  #hero .content {
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
+  }
+
+  #hero hr {
+    max-width: 250px;
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 768px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 48em) {
+  .navbar .nav-links {
+    display: none;
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 480px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 30em) {
+  .section {
+    padding: var(--40px) var(--20px);
+  }
 }
