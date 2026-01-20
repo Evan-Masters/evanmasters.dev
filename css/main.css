@@ -236,16 +236,26 @@ a {
   Buttons
 ------------------------------------------------------------*/
 
-.btn-primary {
+.btn-group {
+  display: flex;
+}
+
+.btn-primary,
+.btn-secondary {
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
+  border-radius: 3px;
+  padding: 10px 30px;
+  min-width: 200px;
+}
+
+.btn-primary {
   color: var(--dark);
   background: var(--light-green);
   border: 2px solid var(--light-green);
-  padding: 10px 30px;
-  text-transform: uppercase;
-  border-radius: 3px;
   transition: background 0.25s ease-in-out;
 }
 
@@ -254,17 +264,11 @@ a {
   border: 2px solid var(--bright-green);
   background: var(--bright-green);
 }
-.btn-secondary {
-  font-family: "Orbitron", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  background: transparent;
-  padding: 10px 30px;
-  color: var(--light-green);
-  border: 2px solid var(--light-green);
 
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  border-radius: 3px;
+.btn-secondary {
+  color: var(--light-green);
+  background: transparent;
+  border: 2px solid var(--light-green);
   transition: background 0.25s ease-in-out;
 }
 
@@ -589,6 +593,11 @@ hr {
   #hero hr {
     max-width: 250px;
   }
+
+  .btn-group {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*------------------------------------------------------------ 
@@ -608,5 +617,24 @@ hr {
 @media only screen and (max-width: 30em) {
   .section {
     padding: var(--40px) var(--20px);
+  }
+
+  #hero p {
+    margin-bottom: 40px;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  #hero .btn-secondary {
+    margin: 0;
   }
 }
