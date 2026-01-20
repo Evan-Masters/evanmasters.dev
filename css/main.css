@@ -240,7 +240,7 @@ a {
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-weight: 500;
   letter-spacing: 0.2rem;
-
+  color: var(--dark);
   background: var(--light-green);
   border: 2px solid var(--light-green);
   padding: 10px 30px;
@@ -272,7 +272,7 @@ a {
   cursor: pointer;
   background: var(--bright-green);
   border: 2px solid var(--bright-green);
-  color: #000;
+  color: var(--dark);
 }
 
 /*------------------------------------------------------------
@@ -350,6 +350,7 @@ a {
 
 #hero .sub-head {
   font-size: var(--20px);
+  margin-bottom: var(--20px);
 }
 
 #hero h1 {
@@ -359,11 +360,16 @@ a {
 }
 
 #hero hr {
-  width: 90%;
+  width: 100%;
+  max-width: 300px;
+}
+
+#hero a {
 }
 
 #hero p {
-  margin: 25px 0;
+  margin: 20px 0 60px;
+  max-width: 700px;
 }
 
 #hero .profile {
@@ -372,6 +378,10 @@ a {
 
 #hero .profile img {
   width: 420px;
+}
+
+#hero .btn-primary {
+  color: var(--dark);
 }
 
 #hero .btn-secondary {
