@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <!DOCTYPE html>
 <html lang="en-US" smoothscroll>
   <head>
@@ -9,19 +10,31 @@
       name="description"
       content="Greetings! My name is Evan Masters and I design and build digital experiences for the web. please feel free to contact me if you are interested in web design or creative services."
     />
+    <!-- Styles -->
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/work-experience.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
     <link rel="stylesheet" href="/css/animations.css" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       type="img/png"
       href="https://evanmasters.dev/assets/images/favicon/favicon.png"
     />
+    <!-- Open Graph -->
     <meta
       prefix="og: http://ogp.me/ns#"
       property="og:image"
@@ -29,10 +42,10 @@
     />
   </head>
   <body>
-    <!--===============  HEADER  ===============-->
+    <!--========== HEADER ==========-->
     <header id="header" class="reveal fade-in">
       <div class="container-lg">
-        <!--  Navbar  -->
+        <!--  Navbar -->
         <a href="/">
           <img
             class="logo"
@@ -64,40 +77,44 @@
     </header>
 
     <main>
-      <!--===============  HERO  ===============-->
+      <!--========== HERO ==========-->
       <section id="hero" class="flex section">
-        <div class="container flex">
-          <!-- Heading Content  -->
-          <div class="content reveal fade-in">
-            <div class="sub-head">Evan Masters</div>
-            <h1>Front-End<br />Web Developer</h1>
-            <hr class="line" />
-            <p>
-              Grettings! I design and build digital experiences for the web.
-              Please feel free to contact me if you are interested in web design
-              and development services.
-            </p>
-            <div class="btn-group">
-              <a href="#portfolio" class="btn-secondary">Portfolio</a>
-              <a href="mailto:info@webdevevan.com" class="btn-primary">Contact</a>
+        <div class="container">
+          <div class="flex">
+            <!-- Heading Content -->
+            <div class="content reveal fade-in">
+              <div class="sub-head">Evan Masters</div>
+              <h1>Front-End<br />Web Developer</h1>
+              <hr class="line" />
+              <p>
+                Grettings! I design and build digital experiences for the web.
+                Please feel free to contact me if you are interested in web
+                design and development services.
+              </p>
+              <div class="btn-group">
+                <a href="#portfolio" class="btn-secondary">Portfolio</a>
+                <a href="mailto:info@webdevevan.com" class="btn-primary"
+                  >Contact</a
+                >
+              </div>
             </div>
-          </div>
-          <!-- Profile Picture -->
-          <div class="profile content reveal fade-in">
-            <img
-              src="/assets/images/profile/evan-masters.png"
-              alt="Evan Masters"
-            />
+            <!-- Profile Picture -->
+            <div class="profile content reveal fade-in">
+              <img
+                src="/assets/images/profile/evan-masters.png"
+                alt="Evan Masters"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!--=============== EXPERIENCE ===============-->
+      <!--========== EXPERIENCE ==========-->
       <section id="experience" class="section">
         <div class="container">
-          <div class="flex head-contr reveal fade-in">
+          <div class="flex divider reveal fade-in">
             <hr />
-            <div>
+            <div class="divider-text">
               <div class="sub-head">Work</div>
               <h2 class="main-head">Experience</h2>
             </div>
@@ -108,7 +125,7 @@
           <div class="role-list">
             <!-- Role 1 -->
             <div class="role reveal fade-in">
-              <div class="decor-text">2022 - 2026</div>
+              <div class="decor-text">2022 - Current</div>
               <div class="sub-head-lg">SAWDUST Creative Agency</div>
               <h2 class="role-title">Lead Web Developer</h2>
             </div>
@@ -141,45 +158,403 @@
         </div>
       </section>
 
-      <!--=============== PORTFOLIO ===============-->
-
-      <section id="portfolio" class="section">
-        <!--==========  container  ==========-->
-
+      <!--========== PORTFOLIO ==========-->
+      <section id="portfolio" class="portfolio section">
         <div class="container">
-          <div class="flex head-contr">
+          <div class="flex divider reveal fade-in">
             <hr />
-            <div>
+            <div class="divider-text">
               <div class="sub-head">View My</div>
               <h2 class="main-head">Portfolio</h2>
             </div>
             <hr />
           </div>
-          <div class="content">
-            <p>COMING SOON...</p>
+
+          <!-- Heading -->
+          <div class="heading-1 dark">
+            <div class="head-wrapper">
+              <h3>SAWDUST Projects</h3>
+              <br />
+              <br />
+            </div>
+            <p style="text-align: center">
+              All branding elements and designs created by
+              <span style="font-weight: 600"> SAWDUST Creative Agency</span> -
+              <a
+                href="https://sawdust.co"
+                target="_blank"
+                style="text-decoration: underline"
+                >Visit Website</a
+              >
+              <br />
+              Websites developed by: Evan Masters
+              <br />
+              Projects are listed in alphabetical order A - Z
+            </p>
           </div>
 
-          <!-- projects -->
-          <div class="projects">
-            <div class="project-item">
-              <a href="" class="project-link">
-                <div class="project-overlay">VIEW PROJECT</div>
-                <img src="/assets/images/portfolio/public-bar-1.png" alt="" />
-              </a>
+          <!-- Grid -->
+          <div class="project-grid">
+            <!-- 100 Club -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://100cluboflakeandporter.org/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/100-club.png"
+                      alt="100 Club of Lake and Porter County website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>100 Club of Lake and Porter Counties</p>
+            </div>
+
+            <!-- Action Plumbing -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://actionplumbinginc.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/action-plumbing.png"
+                      alt="Action Plumbing website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Action Plumbing</p>
+            </div>
+
+            <!-- Armand's Pizzeria -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://armandspizzeria.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/armands-pizzeria.png"
+                      alt="Armand's Pizzeria website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Armand's Pizzeria</p>
+            </div>
+
+            <!-- Bedarra Bar -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://bedarrabar.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/bedarra.png"
+                      alt="Bedarra Bar website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Bedarra Bar</p>
+            </div>
+
+            <!-- Bullpen -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://gotobullpen.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/bullpen.png"
+                      alt="Bullpen website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Bullpen</p>
+            </div>
+
+            <!-- Docs Victory Pub -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://docsvictorypub.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/docs-victory-pub.png"
+                      alt="Docs Victory Pub website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Docs Victory Pub</p>
+            </div>
+
+            <!-- Fiori Italian -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://fiori-italian.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/fiori-italian.png"
+                      alt="Fiori Italian website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Fiori Italian</p>
+            </div>
+
+            <!-- Gels Portage -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://gelsportage.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/gels-portage.png"
+                      alt="Gelsosomo's Pizza Portage website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Gelsosomo's Pizza (Portage)</p>
+            </div>
+
+            <!-- George's -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://georgesfamilyrestaurant.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/georges.png"
+                      alt="George's website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>George's</p>
+            </div>
+
+            <!-- Goldies -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://goldiescutclub.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/goldies.png"
+                      alt="Goldies Cut Club website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Goldies Cut Club</p>
+            </div>
+
+            <!-- Halcyon -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://halcyonwatersolutions.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/halcyon.png"
+                      alt="Halcyon Water Solutions website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Halcyon Water Solutions</p>
+            </div>
+
+            <!-- Lsquared -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://lsquaredbar.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/lsquared.png"
+                      alt="Lsquared website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Lsquared Bar</p>
+            </div>
+
+            <!-- MEF -->
+            <div class="project-container">
+              <div class="project">
+                <a
+                  href="https://munstereducationfoundation.org/"
+                  target="_blank"
+                >
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/mef.png"
+                      alt="Munster Education Foundation website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Munster Education Foundation</p>
+            </div>
+
+            <!-- PBR -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://publicbarandrec.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/pbr.png"
+                      alt="Public Bar & Rec website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Public Bar & Rec</p>
+            </div>
+
+            <!-- True Eats & Drinks -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://trueeatsanddrinks.com/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/portfolio/true.png"
+                      alt="True Eats & Drinks website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>True Eats & Drinks</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!--========== SECTION ==========-->
-    </main>
-    <!--========== FOOTER ==========-->
+      <!--========== Personal Projects ==========-->
+      <section class="portfolio" id="protfolio">
+        <div class="container">
+          <div class="flex divider reveal fade-in">
+            <hr />
+            <div class="divider-text">
+              <div class="sub-head">Personal</div>
+              <h2 class="main-head">Projects</h2>
+            </div>
+            <hr />
+          </div>
 
-    <footer id="footer">
-      <div class="container"></div>
+          <!-- Grid -->
+          <div class="project-grid">
+            <!-- Mcallister, Inc. -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://www.mcallistersinc.com" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/projects/mcallister_inc.png"
+                      alt=" website"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>McAllister, Inc.</p>
+            </div>
+
+            <!-- Handyman Service of Indiana -->
+            <div class="project-container">
+              <div class="project">
+                <a
+                  href="https://handymanserviceofindiana.netlify.app/"
+                  target="_blank"
+                >
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/projects/handymansite.png"
+                      alt="Handyman Service of Indiana"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Handyman Service of Indiana</p>
+            </div>
+
+            <!-- Loruki Hosting -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://lorukihosting.netlify.app" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/projects/loruki.png"
+                      alt="Loruki Hosting"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Loruki Hosting</p>
+            </div>
+
+            <!-- 26andfour Hosting -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://26andfourhosting.netlify.app/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/projects/26andfour.png"
+                      alt="26andfour Hosting"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>26andfour Hosting</p>
+            </div>
+
+            <!-- Design Lab -->
+            <div class="project-container">
+              <div class="project">
+                <a href="https://designlab.netlify.app/" target="_blank">
+                  <div class="project-img-wrapper">
+                    <img
+                      src="/assets/images/projects/designlab.png"
+                      alt="Design Lab"
+                    />
+                    <div class="project-btn">View Site</div>
+                  </div>
+                </a>
+              </div>
+              <p>Design Lab</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer>
+      <div class="container">
+        <!-- Copywrite -->
+        <div class="copywrite-container">
+          <div class="footer-text light">
+            <p>Website Powered By: HTML, CSS, and JavaScript</p>
+            <p>Developed By: Evan Masters</p>
+          </div>
+        </div>
+      </div>
     </footer>
+
     <script src="/js/scripts.js"></script>
   </body>
 </html>
-
-
