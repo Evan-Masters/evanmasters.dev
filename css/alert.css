@@ -1,0 +1,67 @@
+/*------------------------------------------------------------
+  Alert Banner
+------------------------------------------------------------*/
+
+.my-alert {
+  position: relative;
+  display: block;
+  padding: 10px 50px;
+  background-color: var(--main);
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  animation-name: alert;
+  animation-duration: 0.5s;
+  margin-left: 18%;
+}
+
+.my-alert a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.my-alert a:hover {
+  color: #fff;
+}
+
+.my-alert p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.my-alert p strong {
+  color: #fff;
+}
+
+.my-close-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  color: var(--main-dark);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.my-close-btn:hover {
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .my-alert p {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes alert {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

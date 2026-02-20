@@ -1,0 +1,117 @@
+/*------------------------------------------------------------
+  Hero
+------------------------------------------------------------*/
+
+#hero {
+  padding: var(--160px) var(--40px);
+  height: 100vh;
+  max-height: 1080px;
+  min-height: 768px;
+}
+
+#hero .sub-head {
+  font-size: var(--20px);
+  margin-bottom: var(--20px);
+}
+
+#hero h1 {
+  font-size: var(--80px);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#hero hr {
+  width: 100%;
+  max-width: 300px;
+}
+
+#hero a {
+}
+
+#hero p {
+  margin: 20px 0 60px;
+  max-width: 700px;
+}
+
+#hero .profile {
+  padding-left: 100px;
+}
+
+#hero .profile img {
+  width: 420px;
+}
+
+#hero .btn-primary {
+  color: var(--dark);
+}
+
+#hero .btn-secondary {
+  margin-right: var(--20px);
+}
+
+/*------------------------------------------------------------ 
+  max-width: 1280px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 80em) {
+  #hero .profile {
+    padding-left: 80px;
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 992px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 62em) {
+  #hero {
+    height: auto;
+    max-height: 100%;
+    padding: var(--80px) var(--20px);
+  }
+
+  #hero h1 {
+    font-size: var(--60px);
+  }
+
+  #hero .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  #hero .profile {
+    padding: 0;
+  }
+
+  #hero .profile img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  #hero .content {
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
+  }
+
+  #hero hr {
+    max-width: 250px;
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 480px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 30em) {
+  #hero p {
+    margin-bottom: 40px;
+  }
+
+  #hero .btn-secondary {
+    margin: 0;
+  }
+}

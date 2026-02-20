@@ -1,0 +1,107 @@
+/*------------------------------------------------------------
+  Typography
+------------------------------------------------------------*/
+
+body {
+  background: var(--dark);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1,
+.h1 {
+  font-size: var(--60px);
+  font-style: italic;
+
+}
+h2,
+.h2 {
+  font-size: var(--40px);
+  font-style: italic;
+}
+h3,
+.h3 {
+  font-size: var(--30px);
+}
+h4,
+.h4 {
+  font-size: var(--24px);
+}
+h5,
+.h5 {
+  font-size: var(--20px);
+}
+h6,
+.h6 {
+  font-size: 18px;
+}
+
+p,
+li {
+  font-size: var(--18px);
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+.sub-head,
+.sub-head-lg {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  color: var(--light-green);
+}
+
+.sub-head {
+  font-size: var(--16px);
+  margin-bottom: 5px;
+}
+
+.sub-head-lg {
+  font-size: var(--20px);
+  margin-bottom: 20px;
+}
+
+.main-head {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.content p {
+  margin-bottom: var(--20px);
+}
+
+.decor-text {
+  display: inline-block;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--dark);
+  background-color: var(--light-green);
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
