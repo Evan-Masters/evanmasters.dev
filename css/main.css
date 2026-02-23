@@ -108,14 +108,6 @@ section,
   margin: 0 auto;
 }
 
-.inner-content .divider {
-  margin: var(--40px) 0;
-}
-
-.divider:first-child {
-  margin: 0 0 var(--40px) 0;
-}
-
 .divider-text {
   padding: 0 var(--40px);
   text-align: center;
@@ -127,10 +119,6 @@ section,
 
 .border {
   border: 1px solid var(--bright-green);
-}
-
-.divider {
-  margin: var(--40px) 0;
 }
 
 /*------------------------------------------------------------ 
