@@ -3,24 +3,23 @@
 ------------------------------------------------------------*/
 
 #header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 20px 40px;
   max-width: 100%;
-  border-bottom: 2px solid var(--light-green);
 }
 
-#header .container-lg {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: var(--100px);
+  padding: 0 var(--20px);
+  border-bottom: 2px solid var(--light-green);
 }
 
 .text-logo {
@@ -76,7 +75,6 @@
   color: var(--bright-green);
 }
 
-
 /*------------------------------------------------------------ 
   max-width: 1280px
 ------------------------------------------------------------*/
@@ -98,10 +96,6 @@
 ------------------------------------------------------------*/
 
 @media only screen and (max-width: 62em) {
-  #header {
-    padding: 10px 20px;
-  }
-
   .navbar ul li {
     margin-right: var(--14px);
   }
@@ -112,6 +106,10 @@
 ------------------------------------------------------------*/
 
 @media only screen and (max-width: 48em) {
+  .menu {
+    height: var(--80px);
+  }
+
   .navbar .nav-links {
     display: none;
   }
