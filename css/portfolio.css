@@ -13,10 +13,7 @@
 .portfolio .heading-1 {
   width: 100%;
   text-align: center;
-  padding: 20px 0;
-}
-
-.project-container {
+  margin-bottom: var(--40px);
 }
 
 .project-container p {
