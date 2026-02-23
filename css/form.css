@@ -27,25 +27,37 @@ label {
   color: white;
 }
 
+.label-hidden {
+  visibility: hidden;
+}
+
 .input-container {
   padding: 10px 0;
   width: 100%;
 }
 
-input {
-  width: 100%;
-  height: 30px;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
+input,
+textarea {
+  color: var(--light-green);
   background-color: transparent;
-  border: 1px solid var(--light-green) ;
+  border: 1px solid var(--light-green);
+  border-radius: 5px;
+  width: 100%;
+  padding: 18px;
+  margin-top: 5px;
+}
+
+input {
+}
+
+textarea {
+  height: 150px;
+  resize: none;
 }
 
 .input-wrap {
   position: relative;
   display: flex;
-  
 }
 
 .name-wrapper {
@@ -66,16 +78,7 @@ label span {
   color: #ff1d4e;
 }
 
-textarea {
-  height: 80px;
-  width: 100%;
-  margin-top: 5px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  resize: none;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
+
 
 form .btn-container {
   display: -webkit-box;
