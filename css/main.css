@@ -91,6 +91,7 @@ html {
   Layout
 ------------------------------------------------------------*/
 
+section,
 .section {
   padding: var(--80px) var(--40px);
 }
@@ -107,12 +108,16 @@ html {
   margin: 0 auto;
 }
 
-.divider {
-  margin-bottom: 40px;
+.inner-content .divider {
+  margin: var(--40px) 0;
+}
+
+.divider:first-child {
+  margin: 0 0 var(--40px) 0;
 }
 
 .divider-text {
-  padding: 0 40px;
+  padding: 0 var(--40px);
   text-align: center;
 }
 
@@ -120,20 +125,46 @@ html {
   text-align: center;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .border {
   border: 1px solid var(--bright-green);
+}
+
+.divider {
+  margin: var(--40px) 0;
+}
+
+/*------------------------------------------------------------ 
+  min-width: 480px
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 30em) {
+  .divider-wrapper {
+    padding: 0 var(--40px);
+  }
+}
+
+/*------------------------------------------------------------ 
+  min-width: 768px
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 48em) {
+  .divider-wrapper {
+    padding: 0 var(--40px);
+  }
+}
+
+/*------------------------------------------------------------ 
+  max-width: 768px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 48em) {
+  .section {
+    padding: var(--40px) var(--20px);
+  }
+
+  .divider-text {
+    padding: 0 var(--20px);
+  }
 }
 
 /*------------------------------------------------------------ 
@@ -141,7 +172,15 @@ html {
 ------------------------------------------------------------*/
 
 @media only screen and (max-width: 30em) {
-  .section {
-    padding: var(--40px) var(--20px);
+  .divider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .divider-text {
+    margin: 0 auto;
   }
 }
