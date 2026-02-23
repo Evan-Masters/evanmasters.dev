@@ -12,6 +12,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/flexbox.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/hero.css" />
@@ -42,9 +43,10 @@
   </head>
   <body>
     <!--========== HEADER ==========-->
-    <header id="header" class="reveal fade-in">
-      <div class="container-lg">
-        <!--  Navbar -->
+    <header id="header">
+      <!--  Navigation -->
+      <div class="menu reveal fade-in">
+        <!-- Logo -->
         <a href="/">
           <img
             class="logo"
@@ -52,8 +54,8 @@
             alt="EM Logo"
           />
         </a>
+        <!-- Nav Links -->
         <nav class="navbar">
-          <!-- Nav Links -->
           <ul class="nav-links flex">
             <li><a href="#experience">Experience</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -73,21 +75,18 @@
           <a href="mailto:info@webdevevan.com" class="btn-primary">Contact</a>
         </nav>
       </div>
-    </header>
 
-    <main>
-      <!--========== HERO ==========-->
-      <section id="hero" class="flex section">
+      <div class="hero flex-center section">
         <div class="container">
-          <div class="flex">
-            <!-- Heading Content -->
-            <div class="content reveal fade-in">
+          <!-- Hero Content -->
+          <div class="hero-content flex-sb">
+            <div class="reveal fade-in">
               <div class="sub-head">Evan Masters</div>
               <h1>Front-End<br />Web Developer</h1>
               <hr class="line" />
               <p>
-                Grettings! I design and build digital experiences for the web.
-                Please feel free to contact me if you are interested in web
+                Grettings! I design and build modern digital experiences for the
+                web. Please feel free to contact me if you are interested in web
                 design and development services.
               </p>
               <div class="btn-group">
@@ -106,20 +105,27 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
 
+    <!-- Divider -->
+    <div class="divider-wrapper">
+      <div class="container">
+        <div class="divider flex-sb reveal fade-in">
+          <hr />
+          <div class="divider-text">
+            <div class="sub-head">Work</div>
+            <h2 class="main-head">Experience</h2>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <main>
       <!--========== EXPERIENCE ==========-->
       <section id="experience" class="section">
         <div class="container">
-          <div class="flex divider reveal fade-in">
-            <hr />
-            <div class="divider-text">
-              <div class="sub-head">Work</div>
-              <h2 class="main-head">Experience</h2>
-            </div>
-            <hr />
-          </div>
-
           <!-- Role List -->
           <div class="role-list">
             <!-- Role 1 -->
@@ -157,10 +163,10 @@
         </div>
       </section>
 
-      <!--========== PORTFOLIO ==========-->
-      <section id="portfolio" class="portfolio section">
+      <!-- Divider -->
+      <div class="divider-wrapper">
         <div class="container">
-          <div class="flex divider reveal fade-in">
+          <div class="divider flex-sb reveal fade-in">
             <hr />
             <div class="divider-text">
               <div class="sub-head">View My</div>
@@ -168,7 +174,12 @@
             </div>
             <hr />
           </div>
+        </div>
+      </div>
 
+      <!--========== PORTFOLIO ==========-->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
           <!-- Heading -->
           <div class="heading-1 dark reveal fade-in">
             <div class="head-wrapper">
@@ -177,8 +188,8 @@
               <br />
             </div>
             <p style="text-align: center">
-              All branding elements and designs created by
-              <span style="font-weight: 600"> SAWDUST Creative Agency</span> -
+              All branding elements and designs created by:
+              <span style="font-weight: 600"> SAWDUST</span> -
               <a
                 href="https://sawdust.co"
                 target="_blank"
@@ -440,10 +451,10 @@
         </div>
       </section>
 
-      <!--========== Personal Projects ==========-->
-      <section class="portfolio" id="protfolio">
+      <!-- Divider -->
+      <div class="divider-wrapper">
         <div class="container">
-          <div class="flex divider reveal fade-in">
+          <div class="divider flex-sb reveal fade-in">
             <hr />
             <div class="divider-text">
               <div class="sub-head">Personal</div>
@@ -451,7 +462,12 @@
             </div>
             <hr />
           </div>
+        </div>
+      </div>
 
+      <!--========== Personal Projects ==========-->
+      <section class="portfolio" id="protfolio">
+        <div class="container">
           <!-- Grid -->
           <div class="project-grid">
             <!-- Mcallister, Inc. -->
@@ -557,4 +573,3 @@
     <script src="/js/scripts.js"></script>
   </body>
 </html>
-
