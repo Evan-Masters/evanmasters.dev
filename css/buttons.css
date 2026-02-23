@@ -96,5 +96,8 @@
   .btn-primary,
   .btn-secondary {
     width: 100%;
+    padding: 8px 10px;
+    min-width: 150px;
+
   }
 }
