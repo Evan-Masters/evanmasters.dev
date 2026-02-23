@@ -158,6 +158,7 @@ section,
 ------------------------------------------------------------*/
 
 @media only screen and (max-width: 48em) {
+  section,
   .section {
     padding: var(--40px) var(--20px);
   }
