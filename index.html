@@ -128,15 +128,22 @@
         <div class="container">
           <!-- Role List -->
           <div class="role-list">
-            <!-- Role 1 -->
+            <!-- Role  -->
             <div class="role reveal fade-in">
-              <div class="decor-text">2022 - Current</div>
+              <div class="decor-text">2026 - Current</div>
+              <div class="sub-head-lg">DeanHouston+ Chicago</div>
+              <h2 class="role-title">Web Developer</h2>
+            </div>
+            <div class="v-line reveal fade-in"></div>
+            
+            <!-- Role  -->
+            <div class="role reveal fade-in">
+              <div class="decor-text">2022 - 2026</div>
               <div class="sub-head-lg">SAWDUST Creative Agency</div>
               <h2 class="role-title">Lead Web Developer</h2>
             </div>
             <div class="v-line reveal fade-in"></div>
 
-            <!-- Role List -->
             <!-- Role -->
             <div class="role reveal fade-in">
               <div class="decor-text">2022</div>
@@ -571,6 +578,125 @@
           </div>
         </div>
       </section>
+
+      <div class="divider-wrapper">
+        <div class="container">
+          <div class="divider flex-sb reveal fade-in">
+            <hr />
+            <div class="divider-text">
+              <div class="sub-head">Qustions?</div>
+              <h2 class="main-head">Let's Chat!</h2>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <!--========== CONTACT FORM ==========-->
+      <section id="contact" class="background-image">
+        <div class="container">
+          <!-- Contact Form -->
+          <div class="contact-form reveal fade-in">
+            <form
+              action="https://formspree.io/f/moqpygwy"
+              method="POST"
+              id="my-form"
+            >
+              <div class="form-container">
+                <!-- First Name -->
+                <div class="flex-sb">
+                  <div class="input-container-1">
+                    <label class="label-hidden" for="firstName"
+                      >First Name <span class="req">*</span>
+                    </label>
+                    <input
+                      name="firstName"
+                      id="firstName"
+                      type="text"
+                      maxlength="60"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+
+                  <!-- Last Name -->
+                  <div class="input-container-1">
+                    <label class="label-hidden" for="lastName"
+                      >Last Name <span class="req">*</span></label
+                    >
+                    <input
+                      name="lastName"
+                      id="lastName"
+                      type="text"
+                      maxlength="60"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <label class="label-hidden" for="email"
+                  >Email Address <span class="req">*</span></label
+                >
+                <div class="input-container">
+                  <br />
+                  <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    maxlength="60"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div class="input-container">
+                  <label class="label-hidden" for="phone"
+                    >Phone Number<span class="req">*</span></label
+                  >
+                  <br />
+                  <input
+                    name="phone"
+                    id="phone"
+                    type="tel"
+                    minlength="10"
+                    maxlength="14"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="input-container">
+                  <label class="label-hidden" for="message"
+                    >Message <span class="req">*</span></label
+                  >
+                  <br />
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    maxlength="300"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Button -->
+                <div class="btn-container">
+                  <button type="submit" class="btn-primary">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Submit Status -->
+          <div id="status"></div>
+        </div>
+      </section>
     </main>
 
     <!--========== FOOTER ==========-->
@@ -587,8 +713,6 @@
     </footer>
 
     <script src="/js/scripts.js"></script>
+    <script src="/js/ form-validation.js"></script>
   </body>
 </html>
-
-
-
