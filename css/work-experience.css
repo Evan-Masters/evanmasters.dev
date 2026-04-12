@@ -8,10 +8,14 @@
 
 hr {
   display: inline-block;
-  width: 100%;
   background-color: var(--light-green);
   border: none;
+  width: 100%;
   height: 2px;
+}
+
+.divider hr {
+  flex: 1;
 }
 
 .role {
@@ -105,4 +109,14 @@ hr {
   font-size: 12px;
   letter-spacing: 0.2rem;
   margin: 0;
+}
+
+/*------------------------------------------------------------ 
+  max-width: 480px
+------------------------------------------------------------*/
+
+@media only screen and (max-width: 30em) {
+  .divider hr {
+    flex: auto;
+  }
 }
