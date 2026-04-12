@@ -194,4 +194,14 @@ textarea {
   .h4 {
     font-size: var(--22px);
   }
+
+  .sub-head,
+  .sub-head-lg {
+    
+    letter-spacing: 0.25rem;
+  }
+
+  .main-head {
+    font-size: 40px;
+  }
 }
